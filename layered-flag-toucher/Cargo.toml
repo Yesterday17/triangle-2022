@@ -1,0 +1,8 @@
+[package]
+name = "layered-flag-toucher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vfs = "0.5.1"
+actix-web = "3.3.3"
