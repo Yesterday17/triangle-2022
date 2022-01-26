@@ -1,0 +1,97 @@
+[[quiz]]
+# 6502667c-cccd-439a-aa89-35fd141647b6
+name = "サヨナラから始まる物語"
+description = '''
+<style>
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+}
+.right img {
+  object-fit: contain;
+  justify-content: space-between;
+}
+</style>
+
+<div class="container">
+<div>
+
+<code><pre>
+每题的题号都是一个 UUID
+大部分 UUID 是 36 位带横线的格式，但也有部分是 32 位无横线
+两种格式都可以正常解析
+答案正确即可进入下一题，否则会 404
+除第一题之外，之后的每一题的开头都会有一个红包口令
+</pre></code>
+
+<span class="hidden">2</span>ねえ、偶然ってなんだっけ？　必然ってなんだっけ？<br>
+<span class="hidden">f</span>君といると分からなくなるよ<br>
+<span class="hidden">b</span>Ah　夢みたいな感動も　出会いの日の衝動も<br>
+<span class="hidden">4</span>当たり前のように引き寄せたね<br><br>
+
+<span class="hidden">5</span>運命のいたずらに　気づかずにわたしたち<br>
+<span class="hidden">5</span>ずっと傍にいたとか　なんだか可笑しいね<br><br>
+
+<span class="hidden">2</span>めぐり逢えた奇跡の真ん中で<br>
+<span class="hidden">d</span>少しくらいわたし泣いたっていいよね<br>
+<span class="hidden">8</span>サヨナラから始まる物語<br>
+<span class="hidden">2</span>胸の奥に刺さった切なさが痛いけど<br>
+<span class="hidden">6</span>駆け出したら　いつでもそこがスタートライン<br>
+<span class="hidden">a</span>君と(君と)　走って行こう　デスティニー<br><br>
+
+<span class="hidden">4</span>Ah　月が夜を告げて　太陽が朝を呼ぶ<br>
+<span class="hidden">e</span>そしてまた『一日』になっていく<br><br>
+
+<span class="hidden">2</span>追いかけっこするように　星が交差する街<br>
+<span class="hidden">8</span>あっという間だったね　積み上げた季節<br><br>
+
+<span class="hidden">8</span>たどり着いたステージの裏側で<br>
+<span class="hidden">e</span>いつも君が優しく笑ってたんだね<br>
+<span class="hidden">f</span>サヨナラから生まれた物語<br>
+<span class="hidden">4</span>言えなかった言葉がまだたくさんあるよ<br>
+<span class="hidden">9</span>溢れすぎた心からは本音がこぼれた<br>
+<span class="hidden">1</span>もうちょっと(もうちょっと)　消えないでいて　デスティニー<br>
+<span class="hidden">1</span>Ah　デスティニー<br><br>
+
+<span class="hidden">a</span>たった一つ　わがまま言っていいかな<br>
+<span class="hidden">7</span>『生まれ変わっても傍にいてくれますか？』<br><br>
+
+<span class="hidden">1</span>めぐり逢えた奇跡の真ん中で<br>
+<span class="hidden">9</span>少しくらいわたし泣いたっていいよね<br>
+<span class="hidden">b</span>サヨナラから始まる物語<br>
+<span class="hidden">2</span>胸の奥に刺さった切なさが痛いけど<br>
+<span class="hidden">7</span>駆け出したら　いつでもそこがスタートライン<br>
+<span class="hidden">1</span>君と(君と)　走って行こう　デスティニー
+<span class="hidden">a</span>
+</div>
+
+<div class="right">
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1490357828&auto=1&height=66"></iframe>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/97/1e/08/971e0839-eccd-428a-f870-9877ccb04155/source/800x800bb.jpg" />
+</div>
+
+</div>
+'''
+
+[[quiz]]
+# 2fb4552d-826a-4e28-8ef4-911a719b271a
+name = "MOLE"
+description = '''
+小 Q 从数字音乐商店 MOLE 上下载了一首歌曲准备分享给朋友，但他不知道的是 flag 也被分享出去了，为什么呢？
+<h2>参考链接ddd</h2>
+'''
+links = [
+  { name = "下载链接", url = "https://blog.mmf.moe" },
+  { name = "下载链接2", url = "https://file.mmf.moe" }
+]
