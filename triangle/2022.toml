@@ -32,7 +32,8 @@ description = '''
 大部分 UUID 是 36 位带横线的格式，但也有部分是 32 位无横线
 两种格式都可以正常解析
 答案正确即可进入下一题，否则会 404
-除第一题之外，之后的每一题的开头都会有一个红包口令
+除第一题之外，之后的每一题的网页里都会有一个红包口令
+<!-- Alipay{就像这样} -->
 </pre></code>
 
 <span class="hidden">2</span>ねえ、偶然ってなんだっけ？　必然ってなんだっけ？<br>
@@ -88,39 +89,46 @@ description = '''
 # 2fb4552d-826a-4e28-8ef4-911a719b271a
 name = "MOLE"
 description = '''
+<!-- Alipay{2fb4552d826a4e28} 1.14*30 -->
 小 Q 从数字音乐商店 MOLE 上下载了一首歌曲准备分享给朋友，但他不知道的是 flag 也被分享出去了，为什么呢？ 
 '''
-links = [
-  { name = "下载链接", url = "https://blog.mmf.moe" }
-]
+links = [{ name = "下载（密码是本题的 UUID）", url = "https://file.mmf.moe/s/vjFy" }]
 
 [[quiz]]
 # c4504de9-942c-4612-b542-c95336af37b9
 name = "Touch The Flag"
 description = '''
+<!-- Alipay{c4504de9942c4612} 5.14*15 -->
 <pre><code>
 环境每隔 5 分钟重置一次。
 </code></pre>
 
 可以让我摸摸你的 Flag 吗？
 '''
-links = [
-  { name = "链接", url = "https://blog.mmf.moe" }
-]
+links = [{ name = "Link", url = "https://touch.triangle-2022.mmf.moe" }]
 
 [[quiz]]
 # 8b27526d-a5cf-4f21-8d15-d0fa4da81005
 name = "Minyami"
 description = '''
-哪里可以下到 Flag？
+<!-- Alipay{8b27526da5cf4f21} *8 -->
+好不容易下到了 flag，但却加了 --nomerge，怎么办？？？
 '''
-links = [
-  { name = "下载链接", url = "https://blog.mmf.moe" }
-]
+links = [{ name = "下载（密码是本题的 UUID）", url = "https://file.mmf.moe/s/XKse" }]
 
 [[quiz]]
 # bd01774d-f4a1-475f-aec3-8f5019c489ee
-name = "Quiz 05"
+name = "新年快乐！"
 description = '''
-如果还有想法就接着放题，否则就是一个 Congratulation 页。
+<!-- Alipay{bd01774df4a1475f} *5 -->
+今年的新年红包就到这里了（x <br>
+从大二就开始想准备的新年红包在大四寒假终于摸出来了，感叹<br><br>
+
+「サヨナラから始まる物語」是签到，希望大家都去看看 IDOLY PRIDE<br>
+「MOLE」是在研究完 FLAC 格式之后想到的，为了增加难度把加密方式塞进了 vendor string 里<br>
+「Touch The Flag」是在研究 Rust 的 vfs 实现时发现的，只能说实现得很神秘<br>
+「Minyami」是一次偶然没法合并的时候出现的，jxw 什么时候加个输出 segment 顺序的功能啊（罪大恶极<br><br>
+
+最后给&nbsp;<a href="https://book.anni.rs/">Project Anni</a>&nbsp;打个广告，是一个 Self Host 的 Airsonic 替代品，有兴趣的可以来群里摸鱼（<br>
 '''
+links = [{ name = "Link", url = "https://t.me/+lFJHji4gCZc2N2M1" }]
