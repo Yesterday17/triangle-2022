@@ -1,6 +1,7 @@
 use std::{collections::HashMap, str::FromStr};
 
-use actix_web::{get, web, App, HttpServer, Responder};
+use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
+use rand::Rng;
 use uuid::Uuid;
 
 // A server with random failure
@@ -11,12 +12,19 @@ async fn index(data: web::Data<AppState>) -> impl Responder {
 
 #[get("/flag_{id}.ts")]
 async fn segment(data: web::Data<AppState>, web::Path(id): web::Path<String>) -> impl Responder {
+    let mut rng = rand::thread_rng();
+    let roll = rng.gen_range(1..7);
+    if roll <= 4 {
+        return HttpResponse::Forbidden().finish();
+    }
+
     if let Ok(id) = Uuid::from_str(&id) {
         if let Some(i) = data.indexes.get(&id) {
-            return data.flag.chars().nth(*i as usize).unwrap().to_string();
+            return HttpResponse::Ok()
+                .body(data.flag.chars().nth(*i as usize).unwrap().to_string());
         }
     }
-    "Not found".to_string()
+    HttpResponse::Ok().body("Not found".to_string())
 }
 
 struct AppState {
