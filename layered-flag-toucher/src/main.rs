@@ -1,6 +1,8 @@
 use actix_web::{get, web, App, HttpServer, Responder};
 use std::collections::HashMap;
 use std::io::Read;
+use std::process::exit;
+use std::time::Duration;
 use vfs::impls::overlay::OverlayFS;
 use vfs::{FileSystem, PhysicalFS, VfsPath};
 
@@ -54,7 +56,7 @@ async fn touch(
 ) -> impl Responder {
     let path = query.get("id").map_or("/", String::as_ref);
     if data.fs.exists(path).unwrap_or(true) {
-        "TODO: update mtime"
+        "File mtime updated."
     } else {
         let _ = data.fs.create_file(path);
         "File created."
@@ -63,6 +65,12 @@ async fn touch(
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    // restart every 5 minutes
+    actix_web::rt::spawn(async {
+        let _ = actix_web::rt::time::delay_for(Duration::from_secs(300)).await;
+        exit(0);
+    });
+
     let data = web::Data::new(AppState::new());
     HttpServer::new(move || {
         App::new()
@@ -71,7 +79,7 @@ async fn main() -> std::io::Result<()> {
             .service(flag)
             .service(touch)
     })
-    .bind("127.0.0.1:8080")?
+    .bind("0.0.0.0:8080")?
     .run()
     .await
 }
